@@ -1,6 +1,6 @@
 # Orthogonal PDF Decomposition
 
-This repository contains NumPy and PyTorch implementations of the multilevel orthogonal transform in the probability-density-function domain (OPT), the reconstruction step underlying orthogonal PDF decomposition (OPD). The code grew from a 2024 project on multiscale structure in heterogeneous and turbulent fields.
+This repository contains NumPy and PyTorch implementations of the multilevel orthogonal transform in the probability-density-function domain (OPT), the reconstruction step underlying orthogonal PDF decomposition (OPD). 
 
 The construction can be viewed as a PDF-domain counterpart of the two-dimensional Haar transform. Whereas the Haar transform forms multilevel averages from spatially adjacent grid points, OPT first sorts the field values and forms the hierarchy in value space. At level `j`, consecutive groups of `2**j` sorted values are replaced by their group means and then mapped back to their original locations. Increasing the level produces progressively coarser approximations while retaining the spatial footprint of structures with similar amplitudes.
 
