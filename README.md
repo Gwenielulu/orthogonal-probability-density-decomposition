@@ -40,22 +40,6 @@ coarse, details = decompose(field)
 recovered = reconstruct(coarse, details)
 ```
 
-Install PyTorch separately to use the accelerated backend:
-
-```bash
-python -m pip install torch
-python -m examples.torch_backend
-```
-
-Run the tests with:
-
-```bash
-python -m unittest discover -s tests
-```
-
-## Scope
-
-The repository focuses on the multilevel OPT and its orthogonal detail fields. The complete OPD procedure described in the original study also identifies connected patches in reconstructed fields, assigns characteristic length scales, and constructs a scale-based energy spectrum. Those patch and spectrum calculations are not included here.
 
 ## References
 
